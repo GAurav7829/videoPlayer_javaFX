@@ -1,0 +1,123 @@
+.ikonli-font-icon {
+	-fx-cursor: hand;
+}
+
+.play .ikonli-font-icon {
+	-fx-icon-code: "mdi-play";
+	-fx-icon-color: #8a8a8a;
+	-fx-icon-size: 20px;
+}
+
+.pause .ikonli-font-icon {
+	-fx-icon-code: "mdi-pause";
+	-fx-icon-color: #8a8a8a;
+	-fx-icon-size: 20px;
+}
+
+.stop .ikonli-font-icon {
+	-fx-icon-code: "mdi-stop";
+	-fx-icon-color: #8a8a8a;
+	-fx-icon-size: 20px;
+}
+
+.inc-volume .ikonli-font-icon {
+	-fx-icon-code: "mdi-plus";
+	-fx-icon-color: #8a8a8a;
+	-fx-icon-size: 20px;
+}
+
+.dec-volume .ikonli-font-icon {
+	-fx-icon-code: "mdi-minus";
+	-fx-icon-color: #8a8a8a;
+	-fx-icon-size: 20px;
+}
+
+.mute-volume .ikonli-font-icon {
+	-fx-icon-code: "mdi-volume-off";
+	-fx-icon-color: #8a8a8a;
+	-fx-icon-size: 20px;
+}
+
+.fullscreen .ikonli-font-icon {
+	-fx-icon-code: "mdi-fullscreen";
+	-fx-icon-color: #8a8a8a;
+	-fx-icon-size: 20px;
+}
+
+.fullscreen-exit .ikonli-font-icon {
+	-fx-icon-code: "mdi-fullscreen-exit";
+	-fx-icon-color: #8a8a8a;
+	-fx-icon-size: 20px;
+}
+
+.minimize-app .ikonli-font-icon {
+	-fx-icon-code: "mdi-window-minimize";
+	-fx-icon-color: #8a8a8a;
+	-fx-icon-size: 20px;
+}
+
+.maximize-app .ikonli-font-icon {
+	-fx-icon-code: "mdi-window-maximize";
+	-fx-icon-color: #8a8a8a;
+	-fx-icon-size: 20px;
+}
+
+.close-app .ikonli-font-icon {
+	-fx-icon-code: "mdi-close-box";
+	-fx-icon-color: #8a8a8a;
+	-fx-icon-size: 20px;
+}
+
+.play .ikonli-font-icon:hover, .pause .ikonli-font-icon:hover, .stop .ikonli-font-icon:hover,
+	inc-volume .ikonli-font-icon:hover, .dec-volume .ikonli-font-icon:hover,
+	.mute-volume .ikonli-font-icon:hover, .fullscreen .ikonli-font-icon:hover,
+	.fullscreen-exit .ikonli-font-icon:hover {
+	-fx-icon-color: #bebebe;
+}
+
+.menu-bar {
+	-fx-background-color: transparent !important;
+}
+
+.menu-item {
+	-fx-cursor: hand;
+}
+
+.menu-item:hover {
+	-fx-background-color: #8a8a8a;
+}
+
+.menu-button {
+	-fx-background-color: transparent !important;
+	-fx-cursor: hand;
+}
+
+.menu-button>.label {
+	-fx-text-fill: #8a8a8a;
+}
+
+.menu-button:focused, .menu-button:hover, .menu-button:pressed,
+	.menu-button:selected {
+	-fx-text-fill: #717171;
+}
+
+.bg-dark {
+	-fx-background-color: #414141;
+}
+
+.label {
+	-fx-text-fill: #9e9e9e;
+}
+
+.progress-bar>.track {
+	-fx-effect: innershadow(gaussian, #9d9d9d, 4, 0, 0, 1);
+	-fx-background-color: #a29bce;
+}
+
+.progress-bar>.bar {
+	-fx-background-color: #7066b5;
+}
+
+.media-view {
+	/*	-fx-effect: dropshadow(gaussian, #9e9e9e, 0, 0, 0, 0);	*/
+}
