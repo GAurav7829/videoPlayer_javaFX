@@ -28,8 +28,6 @@ import javafx.scene.media.MediaView;
 
 public class MasterController {
 
-	private String MEDIA_FILE = "C:\\Users\\grvsg\\Downloads\\torrent_completed\\Murder Mystery (2019) [WEBRip] [720p] [YTS.LT]\\Murder.Mystery.2019.720p.WEBRip.x264-[YTS.LT].mp4";
-
 	@FXML
 	private Label playBtn;
 
@@ -109,9 +107,6 @@ public class MasterController {
 	private void addListeners() {
 		loadMenuItem.setOnAction(VideoPlayerEventHandler.loadMedia(this));
 		closeMenuItem.setOnAction(VideoPlayerEventHandler.closeVideoPlayer());
-		decVolumeBtn.setOnMouseClicked(VideoPlayerEventHandler.decreaseVolume(mediaPlayer, volume));
-		incVolumeBtn.setOnMouseClicked(VideoPlayerEventHandler.increaseVolume(mediaPlayer, volume));
-		muteBtn.setOnMouseClicked(VideoPlayerEventHandler.muteVolume(mediaPlayer));
 		fullScreenBtn.setOnMouseClicked(VideoPlayerEventHandler.toggleFullScreen(fullScreenBtn, header, 1));
 		mediaView.setOnMouseClicked(VideoPlayerEventHandler.toggleFullScreen(fullScreenBtn, header, 2));
 		// TODO: need to check for maximize app
@@ -131,6 +126,9 @@ public class MasterController {
 		mediaPlayer.currentTimeProperty().addListener(
 				VideoPlayerEventHandler.showProgress(progressBar, mediaPlayer, currentTime, totalTime, playBtn));
 		mediaView.setOnDragOver(VideoPlayerEventHandler.mediaDragOver(this));
+		decVolumeBtn.setOnMouseClicked(VideoPlayerEventHandler.decreaseVolume(mediaPlayer, volume));
+		incVolumeBtn.setOnMouseClicked(VideoPlayerEventHandler.increaseVolume(mediaPlayer, volume));
+		muteBtn.setOnMouseClicked(VideoPlayerEventHandler.muteVolume(mediaPlayer));
 	}
 
 	private void bindProperties() {
