@@ -95,7 +95,7 @@ public class VideoPlayerEventHandler {
 		return e -> {
 
 			FileChooser fileChooser = new FileChooser();
-			fileChooser.setInitialDirectory(new File(System.getProperty("user.dir")));
+			fileChooser.setInitialDirectory(new File(System.getProperty("user.home")));
 			File file = fileChooser.showOpenDialog(StartApplication.getVideoPlayerStage());
 			if (null != file) {
 				try {
